@@ -1,0 +1,26 @@
+{
+  "name": "sws222022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development --watch",
+    "encrypt": "src/encrypt.js --encrypt",
+    "decrypt": "src/encrypt.js --decrypt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xzys/sws222022.git"
+  },
+  "author": "",
+  "license": "GNU",
+  "devDependencies": {
+    "crypto-js": "^4.1.1",
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "lightgallery": "^2.4.0"
+  }
+}
