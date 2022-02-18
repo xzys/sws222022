@@ -34,7 +34,7 @@ if (encryptMode) {
 } else {
     // decrypt mode
 
-    const files = fs.readFileSync('.secret_files', readFileOps).split('\n')
+    const files = fs.readFileSync('.secret_files', readFileOps).split('\n').filter(Boolean)
     files.map(file => {
         const encFn = getEncFn(file)
         const encData = fs.readFileSync(encFn, readFileOps)
