@@ -1,5 +1,6 @@
 import CryptoJS from 'crypto-js'
 import lightGallery from 'lightgallery';
+import 'lightgallery/css/lightgallery-bundle.min.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import lgZoom from 'lightgallery/plugins/zoom'
 
@@ -32,4 +33,9 @@ fetch('/photos.html.enc')
     document.getElementById('content').innerHTML = data;
     document.getElementById('content').className = '';
     document.getElementById('prompt').className = 'hidden';
+
+    lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgZoom, lgThumbnail],
+      speed: 300,
+    });
   })

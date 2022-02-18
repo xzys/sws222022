@@ -17,6 +17,8 @@
   "license": "GNU",
   "devDependencies": {
     "crypto-js": "^4.1.1",
+    "css-loader": "^6.6.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.69.0",
     "webpack-cli": "^4.9.2"
   },
